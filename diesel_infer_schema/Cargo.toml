@@ -18,6 +18,9 @@ diesel = { version = "1.1.0", default-features = false }
 dotenv = ">= 0.8, <0.11"
 cfg-if = "0.1.0"
 
+[dependencies.*]
+default-features = false
+
 [features]
 default = ["dotenv_macro"]
 dotenv_macro = ["infer_schema_macros/dotenv"]
